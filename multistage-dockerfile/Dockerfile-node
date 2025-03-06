@@ -1,0 +1,42 @@
+# Build stage
+FROM node:20 AS build
+
+# Set working directory
+WORKDIR /app
+
+# Copy package files and install dependencies
+COPY package*.json ./
+RUN npm install --only=production
+
+# Copy application files
+COPY . .
+
+# Create a non-root user
+RUN groupadd -r appgroup && useradd -r -g appgroup -d /app -s /sbin/nologin anshuman
+
+# Change ownership of the working directory
+RUN chown -R anshuman:appgroup /app
+
+# Runtime stage
+FROM node:20-slim AS runtime
+
+# Set working directory
+WORKDIR /app
+
+# Copy only necessary files from the build stage
+COPY --from=build /app /app
+
+# Switch to the non-root user
+USER anshuman
+
+# Add labels for author and version
+LABEL "author"="anshuman", "version"="1"
+
+# Expose the application port
+EXPOSE 3000
+
+# Use a health check to monitor the container's status
+HEALTHCHECK --interval=30s --timeout=10s --retries=3 CMD curl -f http://localhost:3000/ || exit 1
+
+# Start the application
+CMD ["node", "node.js"]
