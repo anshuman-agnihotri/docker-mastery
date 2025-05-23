@@ -133,6 +133,6 @@ Feel free to open an [Issue](https://github.com/anshuman-agnihotri/docker-master
 ---
 
 > 🧠 Happy Monitoring!
-> Built with 💙 by [Anshuman](https://www.linkedin.com/in/anshuman-anshuman)
+> Built with 💙 by [Anshuman](https://www.linkedin.com/in/anshuman-agnihotri)
 
 ```
