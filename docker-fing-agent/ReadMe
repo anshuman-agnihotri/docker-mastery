@@ -1,3 +1,5 @@
+Here is your README content formatted in pure **Markdown syntax**. You can copy and paste it into a file named `README.md` in your GitHub repository:
+
 ````markdown
 # 🕵️‍♂️ Fing Agent via Docker
 
@@ -18,6 +20,7 @@ Easily run Fing Agent in a Docker container for real-time network monitoring, de
 - [Migrating from Snap (Optional)](#-migrating-from-snap-optional)
 - [Uninstallation](#-uninstallation)
 - [Resources](#-resources)
+- [Feedback or Questions?](#-feedback-or-questions)
 
 ---
 
@@ -135,4 +138,7 @@ Feel free to open an [Issue](https://github.com/anshuman-agnihotri/docker-master
 > 🧠 Happy Monitoring!
 > Built with 💙 by [Anshuman](https://www.linkedin.com/in/anshuman-anshuman)
 
+```
+
+Let me know if you’d like this converted to PDF or if you want badges (like Docker pulls, GitHub stars) added to the top!
 ```
