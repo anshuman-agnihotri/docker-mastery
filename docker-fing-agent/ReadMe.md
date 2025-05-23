@@ -1,5 +1,3 @@
-Here is your README content formatted in pure **Markdown syntax**. You can copy and paste it into a file named `README.md` in your GitHub repository:
-
 ````markdown
 # 🕵️‍♂️ Fing Agent via Docker
 
@@ -13,14 +11,13 @@ Easily run Fing Agent in a Docker container for real-time network monitoring, de
 
 ## 📋 Table of Contents
 
-- [Prerequisites](#-prerequisites)
-- [Limitations](#-limitations)
-- [Install via Docker Compose](#-install-via-docker-compose)
-- [Manual Installation via Docker](#-manual-installation-via-docker)
-- [Migrating from Snap (Optional)](#-migrating-from-snap-optional)
-- [Uninstallation](#-uninstallation)
-- [Resources](#-resources)
-- [Feedback or Questions?](#-feedback-or-questions)
+- # Prerequisites
+- # Limitations
+- # Install via Docker Compose
+- # Manual Installation via Docker
+- # Migrating from Snap
+- # Uninstallation
+- # Resources
 
 ---
 
@@ -123,7 +120,7 @@ docker volume rm fing-data-volume
 
 ## 📚 Resources
 
-* [Fing Agent Docs](https://help.fing.com/)
+* [Fing Agent Docs](https://help.fing.com/hc/en-us/articles/16874649602588-How-to-install-the-Fing-Agent-on-Linux-Docker)
 * [Fing Official Docker Hub](https://hub.docker.com/r/fing/fing-agent)
 * [Docker Installation Guide](https://docs.docker.com/get-docker/)
 
@@ -138,7 +135,4 @@ Feel free to open an [Issue](https://github.com/anshuman-agnihotri/docker-master
 > 🧠 Happy Monitoring!
 > Built with 💙 by [Anshuman](https://www.linkedin.com/in/anshuman-anshuman)
 
-```
-
-Let me know if you’d like this converted to PDF or if you want badges (like Docker pulls, GitHub stars) added to the top!
 ```
