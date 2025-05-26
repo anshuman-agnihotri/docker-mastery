@@ -1,0 +1,6 @@
+FROM ruby:3.2
+WORKDIR /app
+RUN gem install webrick
+COPY server.rb .
+EXPOSE 3000
+CMD ["ruby", "server.rb"]
